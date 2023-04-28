@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Six</title>
+    <style>
+        section {
+            width: 1200px;
+            height: 600px;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            right: 0;
+            top: 10px;
+            margin: auto;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+        }
+
+        section > div {
+            box-shadow: 10px 5px 5px black;
+        }
+        section > div:nth-child(1) {
+            grid-row: 1/2;
+            grid-column: 1/3;
+            background: url("assets/70.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        section > div:nth-child(2) {
+            background: url("assets/62.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        section > div:nth-child(3) {
+            grid-column: 4/5;
+            grid-row: 1/4;
+            background: url("assets/69.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        section > div:nth-child(4) {
+            background: url("assets/64.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        section > div:nth-child(5) {
+            background: url("assets/65.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        section > div:nth-child(6) {
+            background: url("assets/66.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        section > div:nth-child(7) {
+            background: url("assets/67.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(8) {
+            grid-column: 2/4;
+            grid-row: 3/4;
+            background: url("assets/68.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>
