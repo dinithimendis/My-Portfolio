@@ -11,6 +11,107 @@
     <meta name="robots" content="index">
     <meta name="theme-color" content="green">
     <link rel="icon" href="icon.png">
+    <style>
+        .nav{
+            background: white;
+            border: 1px solid greenyellow;
+            position: relative;
+            width: 100%;
+            height: 70px;
+            box-shadow: 2px 2px black;
+            font-family: 'Edu NSW ACT Foundation', cursive;
+        }
+        .nav>nav{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .nav>nav>ul>li{
+            display: inline-block;
+            padding:10px;
+        }
+
+        .home{
+            background: white;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            box-shadow: 2px 2px black;
+            font-family: 'Edu NSW ACT Foundation', cursive;
+        }
+        .home>div:nth-child(1){
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            left: 0;
+            align-items: center;
+        }
+        .home>div:nth-child(1)>h1{
+            position: relative;
+            top: 200px;
+            left: 200px;
+            color: forestgreen;
+            margin: auto;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .home>div:nth-child(1)>p{
+            position: relative;
+            top: 190px;
+            left: 200px;
+            color: forestgreen;
+            font-size: 40px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        .home>div:nth-child(1)>h3{
+            position: relative;
+            top: 180px;
+            left: 200px;
+            color: black;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        .home>div:nth-child(1)>button{
+            background-color: darkgreen;
+            border: none;
+            color: white;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: 0.4s;
+            border-radius: 24px;
+            position: relative;
+            top: 180px;
+            left: 200px;
+        }
+        .home>div:nth-child(1)>button:hover {
+            background-color: white;
+            color: darkgreen;
+        }
+        .home>div:nth-child(2){
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            right: 0;
+            align-items: center;
+        }
+        .home>div:nth-child(2)>div{
+            position: absolute;
+            right: 200px;
+            top: 37px;
+            bottom: -21px;
+            left: 0;
+            background-size: cover;
+            background: url("assets/images/my1.jpeg");
+            background-position: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+    </style>
 </head>
 <!--<body>
 <h1>Dinithi Chamodya</h1>
@@ -19,30 +120,33 @@
 <a href="http://dinithimendis.epizy.com/?i=1" target="_blank">Infinity</a>
 </body>-->
 <body>
-<header>
+<header class="nav">
     <nav>
-        <menu>
+        <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skill">Skill</a></li>
             <li><a href="#other">Others</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
-        </menu>
+        </ul>
     </nav>
 </header>
 
 <!--Home Page-->
 
 <main>
-    <section id="#home">
-        <h3>HELLO, I'M</h3>
-        <h1>DINITHI MENDIS</h1>
-        <h5>A Full Stack Developer from Sri Lanka</h5>
-        <button href="" content="contact">Contact</button>
-        <aside>
-            <img src="assets/images/Dp1.jpeg" alt="dp" height="400" width="250">
-        </aside>
+    <section id="#home" class="home">
+        <div>
+        <h1>HELLO, I'M</h1>
+        <p>DINITHI MENDIS...</p>
+        <h3>A Full Stack Developer from Sri Lanka</h3>
+        <button href="#contact" content="contact">Contact</button>
+        </div>
+        <div>
+            <div></div>
+            <!--<img src="assets/images/Dp1.jpeg" alt="dp" height="400" width="250">-->
+        </div>
     </section>
 
     <!--About Page-->
