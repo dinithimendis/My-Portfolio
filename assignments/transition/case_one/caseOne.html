@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Case One</title>
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/normalize.css">
+  <!--<link rel="stylesheet" href="/assets/fonts-awesome/css/all.min.css">-->
+  <link rel="stylesheet" href="../../../assets/fonts-awesome/css/all.min.css">
+  <style>
+    section {
+      width: 300px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      position: relative;
+      top: 50px;
+      right: 230px;
+    }
+    section>section{
+      position: relative;
+      height: 50px;
+      left: 0;
+      transition: all 2s;
+      background: rebeccapurple;
+      border-radius: 10px;
+      /*box-shadow: 0px 1px 4px 2px #282424;*/
+    }
+    section>section:hover{
+      left: 150px;
+      transition: all 1s;
+    }
+    section>section>p{
+      position: absolute;
+      margin-top: 5px;
+      /*bottom: 0;*/
+      margin-bottom: 0px;
+      /*left: 20px;*/
+      margin-left: 150px !important;
+      /*margin: auto;*/
+      height: max-content;
+      width: max-content;
+      color: white;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 20px;
+    }
+    section>section>i{
+      font-size: 25px;
+      color: white;
+      position: absolute;
+      height: max-content;
+      width: max-content;
+      top: 0;
+      bottom: 0;
+      right: 20px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <section>
+    <p>Menu 1</p><br>
+    <!--<i class="fa fa-home" aria-hidden="true"></i>-->
+    <i class="fa-solid fa-house"></i>
+  </section>
+  <section>
+    <p>Menu 2</p>
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </section>
+  <section>
+    <p>Menu 3</p>
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </section>
+  <section>
+    <p>Menu 4</p>
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </section>
+  <section>
+    <p>Menu 5</p>
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </section>
+</section>
+</body>
+</html>
+
+
