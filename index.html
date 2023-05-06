@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>MY PORTFOLIO</title>
@@ -12,814 +12,252 @@
     <meta name="theme-color" content="green">
     <link rel="icon" href="icon.png">
     <link href="assets/fonts/css/all.css" rel="stylesheet">
-    <style>
-        /*.nav{
-            background: white;
-            border: 1px solid black;
-            position: relative;
-            width: 100%;
-            height: 70px;
-            box-shadow: 2px 2px black;
-            font-family: 'Edu NSW ACT Foundation', cursive;
-        }
-        .nav>nav{
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        .nav>nav>ul>li{
-            display: inline-block;
-            padding:10px;
-        }
-
-        .home{
-            background: white;
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            box-shadow: 2px 2px 2px black;
-            font-family: 'Roboto', sans-serif;
-        }
-        .home>div:nth-child(1){
-            position: absolute;
-            width: 50%;
-            height: 100%;
-            left: 0;
-            align-items: center;
-        }
-        .home>div:nth-child(1)>h1{
-            position: relative;
-            top: 200px;
-            left: 200px;
-            color: forestgreen;
-            margin: auto;
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-        .home>div:nth-child(1)>p{
-            position: relative;
-            top: 190px;
-            left: 200px;
-            color: forestgreen;
-            font-size: 40px;
-            margin: auto;
-            margin-bottom: 10px;
-        }
-        .home>div:nth-child(1)>h3{
-            position: relative;
-            top: 180px;
-            left: 200px;
-            color: black;
-            margin: auto;
-            margin-bottom: 10px;
-        }
-        .home>div:nth-child(1)>button{
-            background-color: darkgreen;
-            border: none;
-            color: white;
-            padding: 10px 25px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            transition-duration: 0.4s;
-            border-radius: 24px;
-            position: relative;
-            top: 180px;
-            left: 200px;
-        }
-        .home>div:nth-child(1)>button:hover {
-            background-color: white;
-            color: darkgreen;
-        }
-        .home>div:nth-child(2){
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            right: 0;
-            align-items: center;
-        }
-        .home>div:nth-child(2)>div{
-            position: absolute;
-            right: 200px;
-            top: 37px;
-            bottom: 10px;
-            left: 0;
-            background-size: cover;
-            background: url("assets/images/my1.jpeg");
-            background-position: center;
-            align-items: center;
-            border-radius: 50%;
-        }
-        !*About*!
-        .about{
-            background: white;
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            box-shadow: 2px 2px 2px black;
-            font-family: 'Roboto', sans-serif;
-        }
-        .pic{
-            height: 500px;
-            width:  302px;
-            border-radius: 100%;
-            margin-top: 120px;
-        }
-        .about1{
-            width: 1130px;
-            max-width: 85%;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-        .text{
-            width: 540px;
-            margin-top: -20px;
-        }
-        .text>h4{
-            font-size: 50px;
-            font-weight: 300;
-            margin-bottom: 10px;
-
-        }
-        .text>pre{
-            font-size: 20px;
-            line-height: 15px;
-            letter-spacing: 1px;
-        }
-        .text>p{
-            font-size: 20px;
-            line-height: 20px;
-            letter-spacing: 1px;
-        }
-        .data{
-            margin-top: 30px;
-        }
-        .download{
-            font-size: 18px;
-            background: darkgreen;
-            color: #fff;
-            text-decoration: none;
-            border: none;
-            padding: 8px 25px;
-            border-radius: 6px;
-            transition: 0.5s;
-        }
-        .download:hover{
-            background-color: white;
-            color: darkgreen;
-            border: 1px solid darkgreen;
-        }
-
-        !*Skill*!
-        .skill{
-            background: white;
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            box-shadow: 2px 2px black;
-            font-family: 'Roboto', sans-serif;
-        }
-        !*Other*!
-        .other{
-            background: white;
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            box-shadow: 2px 2px black;
-            font-family: 'Roboto', sans-serif;
-        }
-        !*Gallery*!
-        .gallery{
-            background: white;
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            box-shadow: 2px 2px black;
-            font-family: 'Roboto', sans-serif;
-        }
-        !*Contact*!
-        .contact{
-            background: white;
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            box-shadow: 2px 2px black;
-            font-family: 'Roboto', sans-serif;
-        }*/
-        * {
-            font-family: "Poppins", sans-serif;
-            margin: 0;
-            padding: 0;
-            scroll-padding-top: 1rem;
-            scroll-behavior: smooth;
-            list-style: none;
-            text-decoration: none;
-            box-sizing: border-box;
-        }
-
-        /* you can adjust your colours on this place */
-        :root {
-            --main-color: #1b8c08;
-            --text-color: #020102;
-            --bg-color: #fff;
-        }
-
-        /* animated scroll bar */
-        html::-webkit-scrollbar {
-            width: 0.5rem;
-            background: transparent;
-        }
-
-        html::-webkit-scrollbar-thumb {
-            border-radius: 5rem;
-            background: var(--text-color);
-        }
-        header {
-            display: block;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 100;
-        }
-
-        header.shadow {
-            background: var(--bg-color);
-            box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
-            transition: 0.5s ease;
-        }
-
-        header.shadow #search-icon {
-            color: var(--text-color);
-        }
-        #search-icon {
-            font-size: 24px;
-            cursor: pointer;
-            color: var(--bg-color);
-        }
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
-        * {
-            font-family: "Poppins", sans-serif;
-            margin: 0;
-            padding: 0;
-            scroll-padding-top: 1rem;
-            scroll-behavior: smooth;
-            list-style: none;
-            text-decoration: none;
-            box-sizing: border-box;
-        }
-
-        /* you can adjust your colours on this place */
-        :root {
-            --main-color: #1b8c08;
-            --text-color: #020102;
-            --bg-color: #fff;
-        }
-
-        /* animated scroll bar */
-        html::-webkit-scrollbar {
-            width: 0.5rem;
-            background: transparent;
-        }
-
-        html::-webkit-scrollbar-thumb {
-            border-radius: 5rem;
-            background: var(--text-color);
-        }
-
-        section {
-            padding: 4rem 0 2rem;
-            border: 2px solid red;
-        }
-
-        body {
-            color: var(--text-color);
-        }
-
-        .container {
-            max-width: 1068px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        header {
-            display: block;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 100;
-        }
-
-        header.shadow {
-            background: var(--bg-color);
-            box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
-            transition: 0.5s ease;
-        }
-
-        header.shadow #search-icon {
-            color: var(--text-color);
-        }
-
-        .nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 35px;
-        }
-
-        #menu-icon {
-            font-size: 24px;
-            cursor: pointer;
-            color: var(--text-color);
-            display: none;
-        }
-
-        .logo {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--text-color);
-        }
-
-        .logo span {
-            color: var(--main-color);
-        }
-
-        .navbar {
-            display: flex;
-            column-gap: 2rem;
-        }
-
-        .navbar a {
-            color: var(--text-color);
-            font-size: 1rem;
-            text-transform: uppercase;
-            font-weight: 500;
-        }
-
-        .navbar a:hover,
-        .navbar .active {
-            color: var(--main-color);
-            /*border-bottom: 3px solid var(--main-color);*/
-            /*text-decoration: none;*/
-        }
-
-        #search-icon {
-            font-size: 24px;
-            cursor: pointer;
-            color: var(--bg-color);
-        }
-
-        .search-box {
-            position: absolute;
-            top: 110%;
-            right: 0;
-            left: 0;
-            background: var(--bg-color);
-            box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
-            border: 1px solid var(--main-color);
-            border-radius: 0.5rem;
-            clip-path: circle(0% at 100% 0%);
-        }
-
-        .search-box.active {
-            clip-path: circle(144% at 100% 0%);
-            transition: 0.4s;
-        }
-
-        .search-box input {
-            width: 100%;
-            padding: 20px;
-            border: none;
-            outline: none;
-            background: transparent;
-            font-size: 1rem;
-        }
-
-        .home {
-            /*opacity: 0.9;*/
-            max-width: 1150px;
-            margin: auto;
-            width: 100%;
-            min-height: 600px;
-            border-radius: 10px !important;
-            box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px !important;
-            display: flex;
-            align-items: center;
-            background-image: linear-gradient(
-                    rgba(28, 26, 26, 0.07),
-                    rgba(19, 18, 18, 0.06)
-            ),
-            url("Screenshot (1162).png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center left;
-        }
-
-        .home-text {
-            padding-left: 130px;
-        }
-
-        .home-text h1 {
-            font-size: 2.4rem;
-        }
-
-        .home-text span {
-            color: var(--main-color);
-        }
-
-        .home-text p {
-            font-size: 0.938rem;
-            font-weight: 300;
-            margin: 0.5rem 0 1.2rem;
-        }
-
-        .heading {
-            text-align: center;
-        }
-
-        .heading span {
-            font-weight: 500;
-            color: var(--main-color);
-        }
-
-        .heading p {
-            font-size: 0.938rem;
-            font-weight: 300;
-        }
-
-        #homeImg {
-            display: flex;
-            margin-left: 60%;
-            width: 30%;
-            height: 50% !important;
-        }
-
-        .homeAbout {
-            align-self: center;
-        }
-
-        .galleryImg {
-            width: 300px;
-            height: 150px;
-        }
-
-
-        /* Making Responsive */
-        @media (max-width: 1080px) {
-            .container {
-                margin-left: 1rem;
-                margin-right: 1rem;
-            }
-        }
-
-        @media (max-width: 991px) {
-            .nav {
-                padding: 15px 20px;
-            }
-
-            section {
-                padding: 3rem 0 1rem;
-            }
-
-            .home-text {
-                padding-left: 2rem;
-            }
-
-            .home-text h1 {
-                font-size: 2.1rem;
-            }
-        }
-
-        @media (max-width: 920px) {
-            #search-icon {
-                color: var(--text-color);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .search-box input {
-                padding: 15px;
-            }
-
-            .nav {
-                padding: 10px 0;
-            }
-
-            #menu-icon {
-                display: initial;
-            }
-
-            .navbar {
-                position: absolute;
-                top: 100%;
-                right: 0;
-                left: 0;
-                display: flex;
-                flex-direction: column;
-                background: var(--bg-color);
-                row-gap: 0.5rem;
-                text-align: center;
-                box-shadow: 4px 4px 20px rgb(15 54 55 / 20%);
-                clip-path: circle(0% at 0% 0%);
-                transition: 0.6s;
-            }
-
-            .navbar a {
-                display: block;
-                padding: 15px;
-
-            }
-
-            .navbar a:hover/*,
-    .navbar .active*/ {
-                border-bottom: none;
-                background: var(--main-color);
-                color: var(--bg-color);
-
-            }
-
-            .navbar.active {
-                clip-path: circle(144% at 0% 0%);
-
-            }
-
-            .blog-container .box {
-                padding: 4px;
-            }
-        }
-
-        @media (max-width: 727px) {
-            .heading span {
-                font-size: 0.9rem;
-            }
-
-            .heading h2 {
-                font-size: 1.4rem;
-            }
-
-            .about {
-                flex-direction: column-reverse;
-            }
-
-            .about-text {
-                text-align: center;
-            }
-
-            .about-text h2 {
-                font-size: 1.4rem;
-            }
-        }
-
-        @media (max-width: 607px) {
-            .footer-container {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 360px) {
-            .search-box input {
-                padding: 11px;
-            }
-
-            .home {
-                min-height: 500px;
-            }
-
-            .home-text h1 {
-                font-size: 2rem;
-            }
-
-            .home-text p br {
-                display: contents;
-            }
-        }
-
-
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
-<!--<body>
-<h1>Dinithi Chamodya</h1>
-<h1>GDSE62</h1>
-<a href="https://dinimendis.000webhostapp.com/" target="_blank">000 web host</a>
-<a href="http://dinithimendis.epizy.com/?i=1" target="_blank">Infinity</a>
-</body>-->
 <body>
-<header class="nav">
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skill">Skill</a></li>
-            <li><a href="#other">Others</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+
+<header class="shadow">
+    <div class="nav container">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <a class="logo" href="#" style="color:#000000">Dinithi<span>Mendis</span></a>
+        <ul class="navbar">
+            <li><a class="active" href="#home" style="color:#000000">Home</a></li>
+            <li><a href="#about" style="color:#000000">About</a></li>
+            <li><a href="#skills" style="color:#000000">Skills</a></li>
+            <li><a href="#others" style="color:#000000">Others</a></li>
+            <li><a href="#gallery" style="color:#000000">Gallery</a></li>
+            <li><a href="#contact" style="color:#000000">Contact me</a></li>
         </ul>
-    </nav>
+    </div>
 </header>
 
-<!--Home Page-->
+<!------------------------------------------------ home section starts ------------------------------------------------>
+<section  class="home" id="home">
+    <div class="homeAbout">
+        <h3>HELLO, I'M</h3>
+        <h1>DINITHI MENDIS</h1>
+        <p>A Full Stack Developer from Sri Lanka</p>
+        <button href="" content="contact">Contact</button>
+    </div>
+    <div class="dp1">
+        <img id="homeImg" src="assets/images/Dp1.jpeg" alt="dp" height="500">
+    </div>
+</section>
+<!--------------------------------------------------------------------------------------------------------------------->
 
-<main>
-    <section id="#home" class="home">
-        <div>
-        <h1>HELLO, I'M</h1>
-        <p>DINITHI MENDIS...</p>
-        <h3>A Full Stack Developer from Sri Lanka</h3>
-        <button href="#contact" content="contact">Contact</button>
-        </div>
-        <div>
-            <div></div>
-            <!--<img src="assets/images/Dp1.jpeg" alt="dp" height="400" width="250">-->
-        </div>
+<!----------------------------------------------- about sections starts ----------------------------------------------->
+<section id="about"><h1>about</h1>
+    <h4>ABOUT ME</h4>
+    <aside>
+        <img src="assets/images/Dp2.jpeg" alt="dp" height="400" width="250" />
+    </aside>
+    <div>
+        <p>
+            Hi I am Dinithi Chamodya from Sri Lanka. I am 22 years old.I am a
+            student of IJSE and part time full stack Developer.
+        </p>
+    </div>
+    <div>
+        <p>
+            I designing user interaction on websites, developing and databases for
+            website functionality.
+        </p>
+    </div>
+    <p><a href="" download="CV.pdf">Download CV</a></p>
+</section>
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<!----------------------------------------------- skills section starts ----------------------------------------------->
+<section id="skills"><h1>skills</h1>
+    <section>
+        <header>
+            <!-- <menu>
+              <li><a href="#">SKILLS</a></li>
+              <li><a href="#">EDUCATION</a></li>
+              <li><a href="#">EXPERIENCE</a></li>
+            </menu> -->
+        </header>
+        <img src="assets/images/Skills.png" alt="dp" height="400" width="250" />
+        <img
+                src="assets/images/Skills1.png"
+                alt="dp"
+                height="400"
+                width="250"
+        />
+    </section>
+    <!-- please fill another sections -->
+</section>
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<!----------------------------------------------- others section starts ----------------------------------------------->
+<section id="others"><h1>others</h1>
+    <section>
+        <h5>Applications</h5>
+        <article>
+            <aside>
+                <img
+                        src="assets/images/App projects.png"
+                        alt="n"
+                        height="70"
+                        width="70"
+                />
+            </aside>
+            <p>
+                An application is computer software developed specifically to aid a
+                user to perform any specific tasks.
+            </p>
+            <button href="" content="VISIT">VISIT</button>
+        </article>
     </section>
 
-    <!--About Page-->
-
-    <section id="#about" class="about">
-        <div class="about1">
-            <img src="assets/images/Dp2.jpeg" class="pic">
-            <div class="text">
-                <h4>About Us</h4>
-                <pre>
-Hi I am <b>Dinithi Chamodya</b> from Sri Lanka.<br>
-I am 22 years old.I am a <b>student of IJSE</b> and<br>
-<b>part time full stack Developer</b>.</pre>
-                <br>
-                <p>
-I designing  user interaction on websites, developing<br>
-and databases for website functionality.</p>
-                <div class="data">
-                    <a href="#" class="download">DOWNLOAD CV</a>
-                </div>
-            </div>
-        </div>
+    <section>
+        <h5>Games</h5>
+        <article>
+            <aside>
+                <img
+                        src="assets/images/game projects.png"
+                        alt="n"
+                        height="70"
+                        width="70"
+                />
+            </aside>
+            <p>
+                In this technological world, Game Design Software is grabbing the
+                attention of people all over the world.
+            </p>
+            <button href="" content="VISIT">VISIT</button>
+        </article>
     </section>
 
-    <!--Skill Page-->
-
-    <section id="#skill" class="skill">
-        <!--Skills-->
-       <section id="#skills">
-           <header><menu>
-           <li><a href="#skills">SKILLS</a></li>
-           <li><a href="#edu">EDUCATION</a></li>
-           <li><a href="#exp">EXPERIENCE</a></li>
-       </menu></header>
-           <img src="assets/images/Skills.png" alt="dp" height="400" width="250">
-           <img src="assets/images/Skills1.png" alt="dp" height="400" width="250">
-       </section>
-        <!--Education-->
-        <section id="#edu">
-            <header><menu>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#edu">EDUCATION</a></li>
-            <li><a href="#exp">EXPERIENCE</a></li>
-        </menu></header>
-           <section>
-               <img src="assets/gifs/scholorship.gif" alt="dp" height="100" width="100">
-               <p>I faced the scholarship exam grade 5 in 2011 and passed the exam with 165 marks.</p>
-           </section>
-            <section>
-                <img src="assets/gifs/oLevel.gif" alt="dp" height="100" width="100">
-                <p>In the year 2017, I faced the o/l exam and passed the exam with six A passes,
-                    two B passes and one C pass.</p>
-            </section>
-            <section>
-                <img src="assets/gifs/aLevel.gif" alt="dp" height="100" width="100">
-                <p>In 2020, I'm studied advanced level in maths stream
-                    I got two S passes.</p>
-            </section>
-            <section>
-                <img src="assets/gifs/dip.gif" alt="dp" height="100" width="100">
-                <p>Currently I am studying software engineering diploma in IJSE.
-                    I also hope to get the degree later.</p>
-            </section>
-        </section>
-        <!--Experience-->
-        <section id="exp">
-            <header><menu>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#edu">EDUCATION</a></li>
-            <li><a href="#exp">EXPERIENCE</a></li>
-                <img src="assets/images/letter c.png" alt="c" height="50" width="50">
-                <img src="assets/images/letter o.png" alt="o" height="50" width="50">
-                <img src="assets/images/letter m.png" alt="m" height="50" width="50">
-                <img src="assets/images/i letter.png" alt="i" height="50" width="50">
-                <img src="assets/images/letter n.png" alt="n" height="50" width="50">
-                <img src="assets/images/letter g.png" alt="g" height="50" width="50">
-                <br>
-                <img src="assets/images/letter s.png" alt="s" height="50" width="50">
-                <img src="assets/images/letter o.png" alt="o" height="50" width="50">
-                <img src="assets/images/letter o.png" alt="o" height="50" width="50">
-                <img src="assets/images/letter n.png" alt="n" height="50" width="50">
-        </menu></header>
-
-        </section>
+    <!--Webs-->
+    <section>
+        <h5>Webs</h5>
+        <article>
+            <aside>
+                <img
+                        src="assets/images/web projects.png"
+                        alt="n"
+                        height="70"
+                        width="70"
+                />
+            </aside>
+            <p>
+                Project for the web is Microsoft's most recent offering for
+                cloud-based work and project management.
+            </p>
+            <button href="" content="VISIT">VISIT</button>
+        </article>
     </section>
-
-    <!--Others page-->
-    <section id="#other" class="other">
-        <h4>OTHERS</h4>
-        <!--Application-->
-        <section id="#app">
-           <h5>Applications</h5>
-           <article>
-               <aside><img src="assets/images/App projects.png" alt="n" height="70" width="70"></aside>
-               <p>An application is computer software
-                   developed specifically to aid a user
-                   to perform any specific tasks.</p>
-               <button href="" content="VISIT">VISIT</button>
-           </article>
-       </section>
-
-        <section id="#game">
-            <h5>Games</h5>
-            <article>
-                <aside><img src="assets/images/game projects.png" alt="n" height="70" width="70"></aside>
-                <p>In this technological world, Game
-                    Design Software is grabbing
-                    the attention of people all over the world.</p>
-                <button href="" content="VISIT">VISIT</button>
-            </article>
-        </section>
-
-        <!--Webs-->
-        <section id="#web">
-            <h5>Webs</h5>
-            <article>
-                <aside><img src="assets/images/web projects.png" alt="n" height="70" width="70"></aside>
-                <p>Project for the web is Microsoft's most recent
-                    offering for cloud-based work and project management.</p>
-                <button href="" content="VISIT">VISIT</button>
-            </article>
-        </section>
-        <!--Certificates-->
-        <section #certifi>
-            <h5>Certificates</h5>
-            <article>
-                <aside><img src="assets/images/certificates.png" alt="n" height="70" width="70"></aside>
-                <p>A document serving as evidence or as
-                    written testimony, as of status, qualifications,
-                    privileges, or the truth of something.</p>
-                <button href="" content="VISIT">VISIT</button>
-            </article>
-        </section>
+    <!--Certificates-->
+    <section>
+        <h5>Certificates</h5>
+        <article>
+            <aside>
+                <img
+                        src="assets/images/certificates.png"
+                        alt="n"
+                        height="70"
+                        width="70"
+                />
+            </aside>
+            <p>
+                A document serving as evidence or as written testimony, as of
+                status, qualifications, privileges, or the truth of something.
+            </p>
+            <button href="" content="VISIT">VISIT</button>
+        </article>
     </section>
-    <!--Gallery Page-->
-    <section id="#gallery" class="gallery">
-        <h4>MY GALLERY</h4>
+</section>
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<!--------------------------------------------- gallery sections starts ----------------------------------------------->
+<section id="gallery"><h1>gallery</h1>
+    <aside>
+        <img
+                src="assets/images/babypic.jpeg"
+                class="galleryImg"
+                alt="babypic"
+        />
+        <img
+                src="assets/images/walking.jpg"
+                alt="babypic"
+                class="galleryImg"
+        />
+        <img
+                src="assets/images/hands.jpeg"
+                alt="babypic"
+                class="galleryImg"
+        />
+        <img
+                src="assets/images/friends.jpeg"
+                alt="babypic"
+                class="galleryImg"
+        />
+        <br />
+        <img
+                src="assets/images/family.jpg"
+                alt="babypic"
+                class="galleryImg"
+        />
+        <img
+                src="assets/images/beach.jpg"
+                alt="babypic"
+                class="galleryImg"
+        />
+        <img
+                src="assets/images/dreamCatcher.jpeg"
+                alt="babypic"
+                class="galleryImg"
+        />
+    </aside>
+</section>
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<!--------------------------------------------- contact me sections starts -------------------------------------------->
+<section id="contact"><h1>contact</h1>
+    <article>
+        <p>Fill up the form and I will get back to you within 24 hours.</p>
         <aside>
-            <img src="assets/images/babypic.jpeg" alt="babypic" height="384" width="250">
-            <img src="assets/images/walking.jpg" alt="babypic" height="220" width="247">
-            <img src="assets/images/hands.jpeg" alt="babypic" height="161" width="250">
-            <img src="assets/images/friends.jpeg" alt="babypic" height="200" width="177">
-            <br>
-            <img src="assets/images/family.jpg" alt="babypic" height="163.06" width="187">
-            <img src="assets/images/beach.jpg" alt="babypic" height="220" width="190">
-            <img src="assets/images/dreamCatcher.jpeg" alt="babypic" height="184" width="177">
+            <img
+                    src="assets/images/contact.jpg"
+                    alt="tel"
+                    height="50"
+                    width="50"
+            />
         </aside>
-    </section>
-</main>
-    <!--Contact page-->
-<footer id="#contact" class="contact">
-    <h4>CONTACT ME</h4>
-   <section>
-       <article>
-           <p>Fill up the form and
-               I will get back to you within 24 hours.</p>
-           <aside><img src="assets/images/contact.jpg" alt="tel" height="50" width="50"></aside>
-           <address>
-               <img src="" alt="" height="30" width="30">
-               <a href="mailto:dinithimendis42@gmail.com">dinithimendis42@gmail.com</a><br>
-               <img src="" alt="" height="30" width="30">
-               <a href="tel:0783450624">0781111111</a>
-           </address>
-       </article>
-   </section>
+        <address>
+            <img src="" alt="" height="30" width="30" />
+            <a href="mailto:dinithimendis42@gmail.com"
+            >dinithimendis42@gmail.com</a
+            ><br />
+            <img src="" alt="" height="30" width="30" />
+            <a href="tel:0783450624">0781111111</a>
+        </address>
+    </article>
+</section>
+
+<section>
     <form action="" method="get">
-        <label for="name">NAME</label><br>
-        <input type="text" name="name" id="name"><br>
+        <label for="name">NAME</label><br />
+        <input type="text" name="name" id="name" /><br />
 
-        <label for="tele">TEL NO</label><br>
-        <input type="tel" name="tele" id="tele"><br>
+        <label for="tele">TEL NO</label><br />
+        <input type="tel" name="tele" id="tele" /><br />
 
-        <label for="email">EMAIL</label><br>
-        <input type="email" name="email" id="email"><br>
+        <label for="email">EMAIL</label><br />
+        <input type="email" name="email" id="email" /><br />
 
-        <label for="sub">SUBJECT</label><br>
-        <input type="text" name="sub" id="sub"><br>
+        <label for="sub">SUBJECT</label><br />
+        <input type="text" name="sub" id="sub" /><br />
 
-        <label for="adress">ADDRESS</label><br>
-        <input type="adress" name="adress" id="adress"><br>
+        <label for="adress">ADDRESS</label><br />
+        <input type="adress" name="adress" id="adress" /><br />
 
         <button type="submit">SEND MESSAGE</button>
     </form>
-</footer>
+</section>
+<!--------------------------------------------------------------------------------------------------------------------->
+<script src=""></script>
+
 </body>
 </html>
