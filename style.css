@@ -183,6 +183,27 @@ header.shadow {
     font-size: 24px;
 }
 
+.aboutDesc>a>button{
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    padding: 5px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.aboutDesc>a>button:hover {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
 /*#search-icon {
     font-size: 24px;
     cursor: pointer;
