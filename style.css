@@ -110,6 +110,28 @@ header.shadow {
     border-bottom: 3px solid var(--main-color);
 }
 
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 2rem;
+}
+
+.homeAbout h3{
+    color: var(--main-color);
+    font-size: 30px;
+}
+.homeAbout h1{
+    color: var(--main-color);
+    font-size: 40px;
+}
+.homeAbout p{
+    color: var(--text-color);
+    font-size: 20px;
+}
+#homeImg{
+    margin-top: 31px;
+}
 
 /*#search-icon {
     font-size: 24px;
