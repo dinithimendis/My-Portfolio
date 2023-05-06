@@ -121,14 +121,17 @@ header.shadow {
     color: var(--main-color);
     font-size: 30px;
 }
+
 .homeAbout h1{
     color: var(--main-color);
     font-size: 40px;
 }
+
 .homeAbout p{
     color: var(--text-color);
     font-size: 20px;
 }
+
 #homeImg{
     margin-top: 31px;
 }
@@ -146,10 +149,18 @@ header.shadow {
     border-radius: 16px;
     cursor: pointer;
 }
+
 .homeAbout>a>button:hover {
     background-color: var(--bg-color);
     color: var(--main-color);
     border: 1px solid var(--main-color);
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 2rem;
 }
 /*#search-icon {
     font-size: 24px;
