@@ -146,6 +146,11 @@ header.shadow {
     border-radius: 16px;
     cursor: pointer;
 }
+.homeAbout>a>button:hover {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
 /*#search-icon {
     font-size: 24px;
     cursor: pointer;
