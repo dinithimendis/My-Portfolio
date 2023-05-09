@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <title>Case Two</title>
+  <style>
+    section{
+      width:100vw;
+      height: 100vh;
+      background-color: dodgerblue;
+    }
+    section>div{
+      height: 300px;
+      width:300px;
+      position:absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: grey;
+      border-radius: 100%;
+      border: 15px solid white;
+      border-top: 15px solid red;
+      cursor: pointer;
+    }
+    section>div:hover{
+      transform: rotate(360deg);
+      transition: all 3s;
+    }
+    section>div>h1{
+      height: max-content;
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      margin: auto;
+      text-align: center;
+      color: white;
+      font-size: 30px;
+    }
+    section>div:hover>h1{
+      transform: rotate(-360deg);
+      transition: all 3s;
+    }
+  </style>
+
+</head>
+
+<body>
+<section>
+  <div>
+    <h1>RWAD</h1>
+  </div>
+</section>
+</body>
+</html>
