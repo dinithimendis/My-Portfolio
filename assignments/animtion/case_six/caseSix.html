@@ -81,6 +81,16 @@
       transform: translateX(-50%);
       z-index: 2;
     }
+
+    section>div:nth-child(4)>img{
+      width: 72px;
+      height: 72px;
+      animation: wheel;
+      animation-iteration-count: infinite;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-direction: alternate-reverse;
+    }
   </style>
 </head>
 <body>
@@ -90,7 +100,9 @@
   <div>
     <img src="assets/images/car.png">
   </div>
-  <div></div>
+  <div>
+    <img src="assets/images/wheel.png">
+  </div>
 </section>
 </body>
 </html>
