@@ -64,13 +64,24 @@
       transform: translateX(-50%);
       z-index: 2;
     }
+
+    section>div:nth-child(3)>img{
+      /*background: url("assets/images/car.png");*/
+      width: 100%;
+      animation: car;
+      animation-iteration-count: infinite;
+      animation-duration: 0.8s;
+      animation-timing-function: linear;
+    }
   </style>
 </head>
 <body>
 <section>
   <div></div>
   <div></div>
-  <div></div>
+  <div>
+    <img src="assets/images/car.png">
+  </div>
 </section>
 </body>
 </html>
