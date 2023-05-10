@@ -38,10 +38,28 @@
       animation-timing-function: linear;
       background-repeat: repeat-x;
     }
+
+    section>div:nth-child(2){
+      position: absolute;
+      height: 250px;
+      width: 500%;
+      bottom: 200px;
+      left: 0;
+      right: 0;
+      display: block;
+      background: url("assets/images/city.png");
+      z-index: 1;
+      background-repeat: repeat-x;
+      animation: city;
+      animation-iteration-count: infinite;
+      animation-duration: 20s;
+      animation-timing-function: linear;
+    }
   </style>
 </head>
 <body>
 <section>
+  <div></div>
   <div></div>
 </section>
 </body>
