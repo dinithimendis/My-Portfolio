@@ -213,6 +213,15 @@ header.shadow {
     margin: auto;
 }
 
+#img2{
+    position: relative;
+    left: 291px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
 /*#search-icon {
     font-size: 24px;
     cursor: pointer;
