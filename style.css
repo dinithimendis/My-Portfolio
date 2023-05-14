@@ -247,7 +247,7 @@ header.shadow {
 
 .slides {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     position: relative;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
