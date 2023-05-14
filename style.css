@@ -500,6 +500,10 @@ a:hover {
     transform-style: preserve-3d;
 }
 
+.photo-cube:hover {
+    transform: rotateY(-270deg);
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
