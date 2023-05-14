@@ -532,6 +532,10 @@ a:hover {
     transform: translateZ(-110px) rotateY(180deg);
 }
 
+.container a {
+    text-decoration: none;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
