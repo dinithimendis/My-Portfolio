@@ -541,6 +541,13 @@ a:hover {
     text-align: center;
 }
 
+.container h2 {
+    font-size: 1.125em;
+    color: forestgreen;
+    font-weight: 600;
+    margin: 0;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
