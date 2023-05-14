@@ -448,6 +448,13 @@ a:hover {
     padding: 2.8em 0 3.8em;
 }
 
+.cube-container {
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto 4.5em;
+    cursor: pointer;
+}
+
 
 /* Making Responsive */
 @media (max-width: 1080px) {
