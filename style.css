@@ -514,6 +514,11 @@ a:hover {
     position: absolute;
 }
 
+.front {
+    transform: translate3d(0,0,110px);
+}
+
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
