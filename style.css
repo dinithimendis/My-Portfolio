@@ -477,6 +477,14 @@ a:hover {
     background: forestgreen;
 }
 
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
