@@ -470,6 +470,12 @@ a:hover {
     color: black;
 }
 
+.photo-desc {
+    font-size: .85em;
+    color: #fff;
+    padding: 1.1em 1em 0;
+    background: forestgreen;
+}
 
 /* Making Responsive */
 @media (max-width: 1080px) {
