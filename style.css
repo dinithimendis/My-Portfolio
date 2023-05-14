@@ -493,7 +493,7 @@ a:hover {
 }
 
 .photo-cube {
-    transition: transform 10s ease-in-out;
+    transition: transform 8s ease-in-out;
     /*animation-play-state: paused;*/
     width: 220px;
     height: 200px;
