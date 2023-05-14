@@ -528,6 +528,10 @@ a:hover {
     transform-origin: top right;
 }
 
+.right {
+    transform: translateZ(-110px) rotateY(180deg);
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
