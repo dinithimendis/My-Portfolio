@@ -492,7 +492,13 @@ a:hover {
     perspective: 800px;
 }
 
-
+.photo-cube {
+    transition: transform 10s ease-in-out;
+    /*animation-play-state: paused;*/
+    width: 220px;
+    height: 200px;
+    transform-style: preserve-3d;
+}
 
 /* Making Responsive */
 @media (max-width: 1080px) {
