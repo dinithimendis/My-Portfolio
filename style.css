@@ -523,6 +523,11 @@ a:hover {
     transform-origin: center left;
 }
 
+.left {
+    transform: rotateY(-270deg) translate3d(110px, 0, 0);
+    transform-origin: top right;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
