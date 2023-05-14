@@ -485,6 +485,15 @@ a:hover {
     clear: both;
 }
 
+/* Photo 3D Transforms & Transitions */
+
+.cube-container {
+    box-shadow: 0 18px 40px 5px rgba(0,0,0,.4);
+    perspective: 800px;
+}
+
+
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
