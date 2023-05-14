@@ -612,3 +612,22 @@ a:hover {
         display: contents;
     }
 }
+
+@media (min-width: 769px) {
+    .cube-container {
+        float: left;
+        margin-left: 16.6%;
+    }
+}
+@media (min-width: 1025px) {
+    .cube-container:first-child {
+        margin-left: 0;
+    }
+    .cube-container:nth-child(3){
+        float: right;
+    }
+    .content {
+        max-width: 900px;
+        margin: auto;
+    }
+}
