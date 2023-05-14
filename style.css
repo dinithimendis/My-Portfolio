@@ -548,6 +548,14 @@ a:hover {
     margin: 0;
 }
 
+.container h3 {
+    font-size: 2em;
+    line-height: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-style: oblique;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
