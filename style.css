@@ -443,6 +443,11 @@ a:hover {
     height: 150px;
 }
 
+.main-header {
+    text-align: center;
+    padding: 2.8em 0 3.8em;
+}
+
 
 /* Making Responsive */
 @media (max-width: 1080px) {
