@@ -536,6 +536,11 @@ a:hover {
     text-decoration: none;
 }
 
+.container h1, h2, h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
