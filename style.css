@@ -518,6 +518,10 @@ a:hover {
     transform: translate3d(0,0,110px);
 }
 
+.back {
+    transform: translateZ(-110px) rotateY(270deg);
+    transform-origin: center left;
+}
 
 /* Making Responsive */
 @media (max-width: 1080px) {
