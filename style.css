@@ -455,6 +455,19 @@ a:hover {
     cursor: pointer;
 }
 
+/* ---- Page Elements ---- */
+
+.name {
+    font-size: 1.65em;
+    font-weight: 800;
+    margin: 0 0 1.5em;
+    line-height: 1;
+}
+.name span {
+    font-weight: 300;
+    margin-left: -7px;
+}
+
 
 /* Making Responsive */
 @media (max-width: 1080px) {
