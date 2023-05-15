@@ -972,3 +972,13 @@ a:hover {
         margin: auto;
     }
 }
+
+@media only screen and (max-width: 979px) {
+    .as_item {
+        -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+    }
+    .as_title {
+        font-size: 24px;
+    }
+}
