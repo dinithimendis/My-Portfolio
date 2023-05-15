@@ -720,6 +720,20 @@ a:hover {
     justify-content: center;
 }
 
+.card .card-back a {
+    transform-style: preserve-3d;
+    transition: ease transform 2.3s, ease background 0.5s;
+    transform: translateZ(-1px) rotatey(-180deg);
+    background: transparent;
+    border: 1px solid white;
+    font-weight: 200;
+    font-size: 1.3em;
+    color: white;
+    padding: 14px 32px;
+    outline: none;
+    text-decoration: none;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
