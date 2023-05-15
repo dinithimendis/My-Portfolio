@@ -616,6 +616,16 @@ a:hover {
     transform: translateZ(-60px) rotatey(-180deg);
 }
 
+.card .cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: ease all 2.3s;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
