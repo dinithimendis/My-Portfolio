@@ -641,6 +641,18 @@ a:hover {
     transform-style: preserve-3d;
     transform: translateZ(0px);
 }
+
+.card .cover:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    transition: ease all 1.3s;
+    background: rgba(0, 0, 0, 0.4);
+}
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
