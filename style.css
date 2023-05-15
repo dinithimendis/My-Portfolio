@@ -653,6 +653,19 @@ a:hover {
     transition: ease all 1.3s;
     background: rgba(0, 0, 0, 0.4);
 }
+
+.card:nth-child(1){
+    float: left;
+    margin-left: 50px;
+}
+.card:nth-child(2){
+    float: right;
+    margin-left: 50px;
+}
+.card:nth-child(3){
+    float: left;
+    margin-left: 50px;
+}
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
