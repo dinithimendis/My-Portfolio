@@ -574,6 +574,12 @@ a:hover {
     text-align: center;
     margin: 1em !important;
 }
+
+.row {
+    align-items: center;
+    height: 80vh;
+    margin-top: -36px;
+}
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
