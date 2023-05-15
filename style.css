@@ -658,14 +658,29 @@ a:hover {
     float: left;
     margin-left: 50px;
 }
+
 .card:nth-child(2){
     float: right;
     margin-left: 50px;
 }
+
 .card:nth-child(3){
     float: left;
     margin-left: 50px;
 }
+
+.card .cover.item-a {
+    background-image: url("assets/images/projects/p1.jpg");
+}
+
+.card .cover.item-b {
+    background-image: url("assets/images/projects/p3.jpg");
+}
+
+.card .cover.item-c {
+    background-image: url("assets/images/projects/p2.jpg");
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
