@@ -694,6 +694,19 @@ a:hover {
     transform: translateZ(0px);
 }
 
+.card .cover .price {
+    font-weight: 200;
+    position: absolute;
+    top: 55px;
+    right: 50px;
+    color: white;
+    transform-style: preserve-3d;
+    transition: ease all 2.3s;
+    z-index: 4;
+    font-size: 2em;
+    transform: translateZ(0px);
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
