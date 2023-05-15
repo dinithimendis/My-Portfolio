@@ -764,6 +764,14 @@ a:hover {
     padding: 50px 0;
 }
 
+.as_item {
+    /*-ms-flex-preferred-size: calc(33.33333% - 30px);*/
+    flex-basis: calc(33.33333% - 30px);
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
