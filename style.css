@@ -707,6 +707,19 @@ a:hover {
     transform: translateZ(0px);
 }
 
+.card .card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #0b0f08;
+    transform-style: preserve-3d;
+    transition: ease all 2.3s;
+    transform: translateZ(-1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
