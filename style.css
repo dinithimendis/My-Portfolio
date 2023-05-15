@@ -747,7 +747,10 @@ a:hover {
     text-align: center;
 }
 
-
+.as-container {
+    width: 1142px;
+    margin: -60px auto;
+}
 
 /* Making Responsive */
 @media (max-width: 1080px) {
