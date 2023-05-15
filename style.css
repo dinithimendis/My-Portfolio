@@ -734,6 +734,17 @@ a:hover {
     text-decoration: none;
 }
 
+.card .card-back a:hover {
+    background-color: white;
+    color: #0b0f08;
+}
+
+.ph1{
+    color: green;
+    font-size: 40px;
+    text-align: center;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
