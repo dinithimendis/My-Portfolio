@@ -853,6 +853,9 @@ a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    .row{
+        height: 160vh;
+    }
 }
 
 @media (max-width: 360px) {
@@ -889,5 +892,8 @@ a:hover {
     .content {
         max-width: 900px;
         margin: auto;
+    }
+    .row{
+        height: 250vh;
     }
 }
