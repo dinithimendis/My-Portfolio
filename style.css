@@ -788,6 +788,17 @@ a:hover {
     transform: scale(10);
 }
 
+.as_title {
+    min-height: 87px;
+    margin: 0 0 25px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFF;
+    z-index: 2;
+    position: relative;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
