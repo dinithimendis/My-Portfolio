@@ -82,6 +82,7 @@ header.shadow {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--text-color);
+
 }
 
 .logo span {
@@ -120,6 +121,7 @@ header.shadow {
 .homeAbout h3{
     color: var(--main-color);
     font-size: 30px;
+    margin-left: -210px;
 }
 
 .homeAbout h1{
