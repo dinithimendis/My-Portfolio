@@ -806,6 +806,26 @@ a:hover {
     position: relative;
 }
 
+.as_bg {
+    height: 128px;
+    width: 128px;
+    background-color: green;
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#assignments h1{
+    color: green;
+    font-size: 30px;
+    text-align: center;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
