@@ -82,6 +82,7 @@ header.shadow {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--text-color);
+    margin-left: -150px;
 
 }
 
@@ -91,7 +92,8 @@ header.shadow {
 
 .navbar {
     display: flex;
-    column-gap: 2rem;
+    column-gap: 3px;
+    margin-left: 300px;
 }
 /*.navbar a:hover {
     background-color: #ddd;
