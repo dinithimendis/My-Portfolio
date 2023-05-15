@@ -799,6 +799,13 @@ a:hover {
     position: relative;
 }
 
+.as_no {
+    font-size: 30px;
+    color: #FFF;
+    z-index: 2;
+    position: relative;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
