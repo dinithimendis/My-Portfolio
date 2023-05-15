@@ -681,6 +681,19 @@ a:hover {
     background-image: url("assets/images/projects/p2.jpg");
 }
 
+.card .cover h1 {
+    font-weight: bold;
+    position: absolute;
+    bottom: 55px;
+    left: 50px;
+    color: white;
+    transform-style: preserve-3d;
+    transition: ease all 2.3s;
+    z-index: 3;
+    font-size: 30px;
+    transform: translateZ(0px);
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
