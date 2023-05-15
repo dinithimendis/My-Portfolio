@@ -782,6 +782,12 @@ a:hover {
     background-position: center;
 }
 
+.as_link:hover .as_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
