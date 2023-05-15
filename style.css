@@ -580,6 +580,17 @@ a:hover {
     height: 80vh;
     margin-top: -36px;
 }
+
+.card {
+    position: relative;
+    height: 300px;
+    width: calc(100%/3.5);
+    margin-top: 70px;
+    /*margin-left: calc(100%/3);*/
+    transition: ease all 2.3s;
+    perspective: 1200px;
+    align-items: center;
+}
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
