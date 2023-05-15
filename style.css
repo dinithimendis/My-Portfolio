@@ -591,6 +591,31 @@ a:hover {
     perspective: 1200px;
     align-items: center;
 }
+
+.card:hover .cover {
+    transform: rotateX(0deg) rotateY(-180deg);
+}
+
+.card:hover .cover:before {
+    transform: translateZ(30px);
+}
+
+.card:hover .cover:after {
+    background-color: black;
+}
+
+.card:hover .cover h1 {
+    transform: translateZ(100px);
+}
+
+.card:hover .cover .price {
+    transform: translateZ(60px);
+}
+
+.card:hover .cover a {
+    transform: translateZ(-60px) rotatey(-180deg);
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
