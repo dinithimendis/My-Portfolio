@@ -626,6 +626,21 @@ a:hover {
     background-position: center center;
     background-repeat: no-repeat;
 }
+
+.card .cover:before {
+    content: "";
+    position: absolute;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    transition: ease all 2.3s;
+    transform-style: preserve-3d;
+    transform: translateZ(0px);
+}
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
