@@ -892,6 +892,14 @@ header.shadow {
     font-weight: bold;
 }
 
+.contact .col-container .col span {
+    font-size: 1.5rem;
+    color: black;
+    letter-spacing: 0.1rem;
+    line-height: 20px;
+    font-style: italic;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
