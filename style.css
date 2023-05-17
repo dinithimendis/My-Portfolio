@@ -315,13 +315,13 @@ header.shadow {
     border: 1px solid green;
 }
 
-a {
+.slider-container .slider .slides .slide a {
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
 }
 
-a:hover {
+.slider-container .slider .slides .slide a:hover {
     background-color: #1b8c08;
     color: black;
 }
