@@ -840,6 +840,14 @@ header.shadow {
     color: green;
 }
 
+.contact .col-container .col h2 {
+    font-size: 30px;
+    color: green;
+    font-weight: bold;
+    margin-top:-10px;
+    line-height: 60px;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
