@@ -826,6 +826,11 @@ header.shadow {
     text-align: center;
 }
 
+.contact .col-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
