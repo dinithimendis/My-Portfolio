@@ -836,6 +836,10 @@ header.shadow {
     text-align: center;
 }
 
+.contact h1 span {
+    color: green;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
