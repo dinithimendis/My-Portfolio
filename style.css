@@ -92,7 +92,7 @@ header.shadow {
 
 .navbar {
     display: flex;
-    column-gap: 3px;
+    column-gap: 40px;
     margin-left: 300px;
 }
 /*.navbar a:hover {
@@ -765,7 +765,7 @@ header.shadow {
 }
 
 .as_item {
-    /*-ms-flex-preferred-size: calc(33.33333% - 30px);*/
+    -ms-flex-preferred-size: calc(33.33333% - 30px);
     flex-basis: calc(33.33333% - 30px);
     margin: 0 15px 30px;
     overflow: hidden;
@@ -917,6 +917,8 @@ header.shadow {
     background-position: center;
     background-size: cover;
 }
+
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
@@ -1098,4 +1100,3 @@ header.shadow {
         font-size: 16px;
     }
 }
-
