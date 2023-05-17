@@ -848,6 +848,20 @@ header.shadow {
     line-height: 60px;
 }
 
+.contact .col-container .col input,
+.contact .col-container .col textarea {
+    background-color: white;
+    width: 70%;
+    padding: 1rem 1rem;
+    border-radius: 16px;
+    font-size: 1.7rem;
+    color: green;
+    margin: 0.5rem 0;
+    resize: vertical;
+}
+
+
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
