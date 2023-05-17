@@ -880,6 +880,18 @@ header.shadow {
     border: 1px solid var(--main-color);
 }
 
+.contact .col-container{
+    line-height: 10px;
+}
+
+.contact .col-container .col p {
+    font-size: 1.7rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
