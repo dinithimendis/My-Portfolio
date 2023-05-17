@@ -900,6 +900,23 @@ header.shadow {
     font-style: italic;
 }
 
+.col{
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.col:nth-child(1){
+    background: url("assets/images/contacts/contact1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.col:nth-child(2){
+    background: url("assets/images/contacts/contact.png");
+    background-position: center;
+    background-size: cover;
+}
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
