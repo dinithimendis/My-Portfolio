@@ -933,6 +933,35 @@ header.shadow {
     background-size: cover;
 }
 
+/*footer*/
+
+footer {
+    background: green;
+    color: #fff;
+    padding: 5px 0 5px;
+    text-align: center;
+    font-size:15px;
+}
+
+.footerContainer{
+    height: 25px;
+}
+.foot p{
+    margin-top: 5px;
+    text-align: center;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
 
 /* Making Responsive */
 @media (max-width: 1080px) {
