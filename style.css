@@ -831,6 +831,11 @@ header.shadow {
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
+.contact h1{
+    font-size: 40px;
+    text-align: center;
+}
+
 /* Making Responsive */
 @media (max-width: 1080px) {
     .container {
