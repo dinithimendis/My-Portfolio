@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS QUE</title>
+  <style>
+      section{
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          width: 900px;
+          height: 300px;
+          /*border: 1px solid yellow;*/
+          display: flex;
+          align-items: center;
+
+
+      }
+      section>div{
+          /*position: absolute;*/
+          height: 80px;
+          /*border: 1px solid black;*/
+          flex-grow: 1;
+
+
+      }
+
+      div:first-child{
+          align-self: start;
+      }
+     /* div:nth-child(2){
+         !* background: green;*!
+         !* left: 170px;
+          top: 150px;*!
+      }
+      div:nth-child(3){
+          background: blue;
+         !* left: 240px;
+          top: 150px;*!
+      }
+      div:nth-child(4){
+          background: yellow;
+         !* left: 310px;
+          top: 150px;*!
+      }
+      div:nth-child(5){
+          background: hotpink;
+          !*left: 380px;
+          top: 150px;*!
+      }*/
+      div:last-child{
+          align-self: end;
+      }
+  </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+<script>
+    let colors = ["red", "green", "blue", "yellow", "hotpink", "deeppink"];
+
+    let divAr = document.querySelector("section").children;
+
+    setInterval(function (){
+
+        for (let i = 0; i < divAr.length; i++) {
+            console.log(divAr[i]);
+            divAr[i].style.background=colors[i];
+        }
+        let lastElement = colors.pop();
+        colors.unshift(lastElement);
+
+    },1000);
+
+</script>
+</body>
+</html>
