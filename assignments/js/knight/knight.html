@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Knight-Rider With JS</title>
+  <link rel="stylesheet" href="assets_knight/css/bootstrap.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+    * {
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    #container {
+      display: flex;
+      height: 70px;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      padding: 0;
+    }
+
+    #container > div {
+      width: 100%;
+      height: 70px;
+      border: 1px solid lightgray;
+    }
+
+    .button {
+      width: 100px;
+      height: 40px;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 12px;
+      letter-spacing: 2.5px;
+      font-weight: 500;
+      color: #000;
+      background-color: darkred;
+      border: none;
+      border-radius: 60px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      outline: none !important;
+    }
+
+    .button:hover {
+      background-color:red;
+      color: white;
+
+    }
+
+    .hoverBt:hover{
+      background-color: dodgerblue;
+      color:white;
+
+    }
+  </style>
+</head>
+<body>
+<section class="container-fluid">
+  <section class="row mt-5">
+    <div class="col-12">
+      <h1 class="text-center" style="color: #721c24">JavaScript Knight Rider</h1>
+    </div>
+  </section>
+  <section class="row mt-5">
+    <section id="container" class="col-7">
+      <div id="div1"></div>
+      <div id="div2"></div>
+      <div id="div3"></div>
+      <div id="div4"></div>
+      <div id="div5"></div>
+      <div id="div6"></div>
+    </section>
+  </section>
+  <section class="row justify-content-center mt-5">
+    <div class="col-3 d-flex justify-content-around">
+      <button class="button hoverBt" id="btnStart">Start</button>
+      <button class="button" id="btnStop">Stop</button>
+    </div>
+  </section>
+</section>
+<script src="assets_knight/js/jquery-3.6.1.min.js"></script>
+<script src="assets_knight/js/bootstrap.min.js"></script>
+<script>
+  let id = 0;
+  var kitt = {
+    count: 0,
+    tempArray: [],
+    leftColorArray: ['white', 'white', 'white', 'white', 'white', 'white', "#b9a7a7", '#a67d7d', '#966161', '#bc6060', '#b84747', '#dc4141'],
+    rightColorArray: ['white', 'white', 'white', 'white', 'white', 'white', '#dc4141', '#b84747', '#bc6060', '#966161', '#a67d7d', "#b9a7a7"],
+
+    animateLeft: function () {
+      var lastColor = this.tempArray.pop();
+      this.tempArray.unshift(lastColor);
+    },
+    animateRight: function () {
+      var firstColor = this.tempArray.shift();
+      this.tempArray.push(firstColor);
+    },
+    animate: function () {
+      this.count++;
+      if (this.count <= this.leftColorArray.length) {
+        this.tempArray = this.leftColorArray;
+        this.animateLeft();
+      } else {
+        if (this.count >= (this.rightColorArray.length * 2)) {
+          this.count = 0;
+        }
+        this.tempArray = this.rightColorArray;
+        this.animateRight();
+      }
+    }
+  }
+
+  renderKit();
+
+  function renderKit() {
+    $('#container').empty();
+    for (let i = 0; i < (kitt.tempArray.length) / 2; i++) {
+      $('#container').append(`<div style="background-color: ${kitt.tempArray[i]}"></div>`);
+    }
+    kitt.animate();
+  }
+
+  $("#btnStart").click(function () {
+    clearInterval(id);
+    id = setInterval(renderKit, 130);
+    music.play();
+    music.loop = true;
+  });
+
+  $("#btnStop").click(function () {
+    clearInterval(id);
+    music.pause();
+  });
+</script>
+</body>
+</html>
