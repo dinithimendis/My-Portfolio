@@ -38,15 +38,12 @@
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <!--<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 1"></button>-->
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active tv-option">
                     <img src="../../../assignments/css_frame_work/pos/assets/images/aa_pos/pic 1.jpg" class="d-block w-100 tv-option" alt="..." height="600px">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
-                        <!--<p>Some representative placeholder content for the first slide.</p>-->
                     </div>
                 </div>
                 <div class="carousel-item tv-option ">
@@ -195,17 +192,10 @@
     </section>
 </section>
 <section id="oders">
-    <section class="row" style="width: 90vw">
-        <section class="col-6">    <p class="fs-2 text-center fw-semibold justify-content-start">Place Order Form</p>
-        </section>
-        <section class="col-6 ">
-            <a class="btn btn-outline-info mt-3 w-25 " style="margin-left: 500px;" href="#viewOders" id="viewOderform" role="button">View Orders</a>
-        </section>
-    </section>
     <section class="row me-3" >
 
 
-        <section  class="col-7 p-3 mb-2 bg-primary-subtle text-emphasis-primary border border-light-subtle rounded-3 shadow p-3 mb-5 bg-body-tertiary rounded w-50 m-auto mt-4 m">
+        <section  class="col-7 p-3 mb-2 bg-secondary-subtle text-emphasis-primary border border-light-subtle rounded-3 shadow p-3 mb-5 bg-body-tertiary rounded w-50 m-auto mt-4 m">
             <form class="row g-3">
                 <div class="col-md-6">
                     <label for="Oid" class="form-label">Oder Id</label>
@@ -248,7 +238,7 @@
                 </div>
 
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary" >Add to cart</button>
+                    <button type="submit" class="btn btn-success" >Add to cart</button>
                 </div>
             </form>
         </section>
@@ -309,8 +299,16 @@
         </section>
 
     </section>
-    <table class="table table-hover table-borderless table-striped text-center w-75 m-auto mt-5  rounded-3">
-        <thead class="bg-primary">
+    <section class="row" style="width: 90vw">
+        <section class="col-6">    <p class="fs-2 text-center fw-semibold justify-content-start">Place Order Form</p>
+        </section>
+        <section class="col-6 ">
+            <a class="btn btn-outline-info mt-3 w-25 " style="margin-left: 500px;" href="#viewOders" id="viewOderform" role="button">View Orders</a>
+        </section>
+    </section>
+    <section>
+        <table class="table table-hover table-borderless table-striped text-center w-75 m-auto mt-5  rounded-3">
+        <thead class="bg-secondary">
         <tr>
             <th  scope="col">Code</th>
             <th scope="col">Description</th>
@@ -320,44 +318,8 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <th scope="row">O001</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">O002</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">O003</th>
-
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">O004</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">O005</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
         </tbody>
-    </table>
+    </table></section>
 
 
 </section>
@@ -368,7 +330,7 @@
                 <option selected>Select Order Id</option>
                 <option>...</option>
             </select>
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
         </form>
     </div>
 </section>
@@ -405,11 +367,10 @@
                 </div>
             </form>
         </section>
-        <section id="oderspic2" class="col-7  me-4 "
-        >
+        <section id="oderspic2" class="col-7  me-4 ">
 
             <table class="mt-4 table table-hover table-borderless table-striped text-center w-100  rounded-3">
-                <thead class="bg-primary">
+                <thead class="bg-secondary">
                 <tr>
                     <th  scope="col">Oder Id</th>
                     <th scope="col">Customer Name</th>
@@ -419,50 +380,7 @@
 
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">O001</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                </tr>
-                <tr>
-                    <th scope="row">O002</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                </tr>
-                <tr>
-                    <th scope="row">O003</th>
-
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                </tr>
-                <tr>
-                    <th scope="row">O004</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                </tr>
-                <tr>
-                    <th scope="row">O005</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-
-                </tr>
-
-                </tbody>
+                <tbody></tbody>
             </table>
             <div class="row w-50">
 
