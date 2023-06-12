@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="../../../assets/css/normalize.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+        img{
+            width:100vw;
+            height:100vh;
+        }
+        .main{
+            position:absolute;
+            width:330px;
+            height:290px;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background: #686e73;
+            border-bottom:5px solid gray;
+            border-radius:4px;
+            box-shadow:2px 2px 2px gray;
+            padding:15px;
+        }
+        .number{
+            padding:0;
+            margin:0;
+        }
+        .display{
+            width: 232px;
+            height: 40px;
+            margin-bottom: 8px;
+            margin-left:89px;
+            text-align: right;
+            background-color: #f0f0f0;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 30px;
+            outline: none;
+        }
+        .clear{
+            width:60px;
+            padding:10px 6px;
+            position:absolute;
+            border-radius:3px;
+            left:20px;
+            top:18px;
+            cursor:pointer;
+            text-align:center;
+            background:#F43341;
+            color:white;
+        }
+        .display p{
+            margin: 0;
+        }
+
+        .number li{
+            list-style:none;
+            float:left;
+            width:52px;
+            background:white;
+            margin:9px 5px;
+            padding:10px;
+            border-bottom:4px solid #828A9B;
+            border-radius:5px;
+            color:#888888;
+            text-align:center;
+            transition:.2s;
+            cursor:pointer;
+        }
+
+        .number li:hover{
+            background: gray;
+            border-bottom: 4px solid dimgrey;
+            color: white;
+        }
+
+
+        #clear:hover{
+            background: white;
+            color: #F43341;
+        }
+
+    </style>
+</head>
+<body>
+<img src="assets/cal1.png">
+<div class="main">
+    <div class="display" id="display">
+        <p></p>
+    </div>
+    <div class="clear" id="clear">C</div>
+    <ul class="number">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>+</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>x</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>-</li>
+        <li>0</li>
+        <li>.</li>
+        <li>=</li>
+        <li>÷</li>
+    </ul>
+</div>
+<script src="assets/js/jquery-3.7.0.min.js"></script>
+<script>
+    window.onload = function (){
+        var elements = document.getElementsByTagName("li");
+        var screen = document.querySelectorAll('#display p')[0];
+        var clear =   document.getElementsByClassName('clear')[0];
+
+        for(var i=0;i<elements.length;i+=1){
+            if(elements[i].innerHTML === '='){
+                elements[i].addEventListener("click", calculate(i));
+            }else{
+                elements[i].addEventListener("click", addtocurrentvalue(i));
+            }
+        }
+
+        function addtocurrentvalue (i){
+            return function(){
+                if (elements[i].innerHTML === "÷") {
+                    screen.innerHTML  +=  "/ " ;
+                }else if(elements[i].innerHTML === "x"){
+                    screen.innerHTML += "*";
+                } else{
+                    screen.innerHTML  += elements[i].innerHTML;
+                }
+            };
+        }
+        clear.onclick = function () {
+            screen.innerHTML = '';
+        };
+
+        function calculate(i) {
+            return function () {
+                screen.innerHTML = eval(screen.innerHTML);
+            };
+        }
+    };
+
+</script>
+</body>
+</html>
