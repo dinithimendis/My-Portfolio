@@ -18,35 +18,6 @@ $("#cusIdTxt").val("C-00"+idAutoGenerator);
      }
  }
 
-/*
-/!** validator for customer id txt  *!/
-validator(
-    '#cusIdTxt', /^(C-0)[0-9]{1,4}$/,
-    "Your input can't be validated, Ex - C-001",
-    '#customerIdLbl', '#cusNameTxt'
-)
-
-/!** validator for customer name txt  *!/
-validator(
-    '#cusNameTxt', /^[A-z]{3,30}$/,
-    "Your input can't be validated, Ex - mr.Gunawardhana",
-    '#customerNameLbl', '#cusAddressTxt'
-)
-
-/!** validator for customer address txt  *!/
-validator(
-    '#cusAddressTxt', /^[A-z]{3,30}$/,
-    "Your input can't be validated, Ex - Galle ",
-    '#customerAddressLbl', '#cusContactTxt'
-)
-
-/!** validator for customer contact txt  *!/
-validator(
-    '#cusContactTxt', /^(07([1245678])|091)(-)[0-9]{7}$/,
-    "Your input can't be validated, Ex - 0719028827",
-    '#CustomerContactLbl', '#cusNameTxt'
-)
-*/
  //text fields clear
 function clear(textFld) {
     $(textFld).val('');
