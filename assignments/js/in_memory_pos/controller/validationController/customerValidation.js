@@ -1,3 +1,4 @@
+/*
 const CUS_ID_REGEX = /^(C-00)[0-9]{1,5}$/;
 const CUS_NAME_REGEX = /^[A-z]{3,30}$/;
 const CUS_ADDRESS_REGEX = /^[A-z]{3,30}$/;
@@ -95,3 +96,46 @@ function setBtn() {
 });
 
 
+*/
+
+$('#cusNameTxt').on('keyup', function (e) {
+    if (/^[A-z ]{3,20}$/.test($('#cusNameTxt').val())) {
+        $('#cusNameTxt').css('border', '3px solid green')
+        $('#customerNameLbl').text('')
+        if (e.key === "Enter") {
+            $('#cusAddressTxt').focus()
+        }
+    } else {
+        $('#cusNameTxt').css('border', '3px solid red');
+        $('#customerNameLbl').text("Your input can't be validated, Ex - Dini ")
+    }
+});
+
+$('#cusAddressTxt').on('keyup', function (e) {
+    if (/^[A-z ]{4,20}$/.test($('#cusAddressTxt').val())) {
+        $('#cusAddressTxt').css('border', '3px solid green')
+        $('#customerAddressLbl').text('')
+        if (e.key === "Enter") {
+            $('#cusContactTxt').focus()
+        }
+    } else {
+        $('#cusAddressTxt').css('border', '3px solid red');
+        $('#customerAddressLbl').text("Your input can't be validated, Ex - Galle ")
+    }
+});
+
+$('#cusContactTxt').on('keyup', function (e) {
+    if (/^(07([1245678])|091)(-)[0-9]{7}$/.test($('#cusContactTxt').val())) {
+        $('#cusContactTxt').css('border', '3px solid green')
+        $('#CustomerContactLbl').text('')
+        if (e.key === "Enter") {
+            /** if you press enter last text-field you can save details withut pressing
+             * any kind of buttons */
+            addCustomer();
+            $('#cusIdTxt').focus()
+        }
+    } else {
+        $('#cusContactTxt').css('border', '3px solid red');
+        $('#CustomerContactLbl').text("Your input can't be validated, Ex - 0719028827 ")
+    }
+});
