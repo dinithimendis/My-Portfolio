@@ -48,6 +48,7 @@ function addCustomer() {
     idAutoGenerator++;
     $("#cusIdTxt").val("C-00" + idAutoGenerator);
     loadAllCustomer();
+    loadAllCustomersToCombo();
 }
 
 function bindRowClickEvents() {
@@ -121,7 +122,7 @@ $("#srcCustomerId").on('keydown', function (e) {
             $("#cusAddressTxt").val(response.address);
             $("#cusContactTxt").val(response.contact);
         } else {
-            clear('#cusNameTxt,#cusAddressTxt,#cusContactTxt,#cusIdTxt');
+            clear('#cusNameTxt,#cusAddressTxt,#cusContactTxt,#cusIdTxt,#srcCustomerId');
         }
     }
 });

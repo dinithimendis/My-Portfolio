@@ -120,7 +120,7 @@ $('#btnAddToTable').on('click', function () {
         }
     }
 
-    loadAllItems();
+    loadAllItem();
     loadAllOderDetails();
 
     $('#total').val()

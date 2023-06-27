@@ -24,7 +24,7 @@ $('#itemQtyTxt').on('keyup', function (e) {
     }
 });
 
-$('#cusContactTxt').on('keyup', function (e) {
+$('#unitPriceTxt').on('keyup', function (e) {
     if (/^([0-9]{2,6}.[0-9]{1,2})$/.test($('#unitPriceTxt').val())) {
         $('#unitPriceTxt').css('border', '3px solid green')
         $('#itemUnitPriceTxtLbl').text('')
