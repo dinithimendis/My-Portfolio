@@ -425,7 +425,6 @@ header.shadow {
 }
 .image{
     position: absolute;
-    top: 150px;
 }
 .p{
     position: absolute;
@@ -603,6 +602,13 @@ header.shadow {
 #others h1 {
     text-align: center;
     font-size: 30px;
+    color: #1b8c08;
+}
+
+#skills h1{
+    text-align: center;
+    font-size: 30px;
+    color: #1b8c08;
 }
 
 /* ---- Page Elements ---- */
